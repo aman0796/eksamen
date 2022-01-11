@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.menu_knap {
+  font-family: "Major Mono Display", monospace;
+  font-size: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* .knap:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+.knap {
+  background-color: white;
+  padding: 1rem 2rem;
+  border: dotted black 1px;
+  box-shadow: gray 0.5rem 0.5rem;
+  text-decoration: none;
+  color: black;
+} */
+
+.boxed {
+  text-align: center;
+}
+
+.menu {
+  font-family: "Major Mono Display", monospace;
+  font-weight: lighter;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.knap2:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-color: white;
+}
+.knap2 {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 1rem;
+  border: solid rgb(173, 173, 173) 1px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxed {
+  text-align: center;
+  height: 100%;
+  max-width: 50ch;
+}
+
+@media (min-width: 600px) {
+  header nav ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    overflow-x: auto;
+  }
+}
+
+.logo img {
+  display: inline;
+  width: 8vw;
+  height: 4vw;
+  text-align: center;
+}
+
+body {
+  background: #ffffff;
+}
+
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.125;
+  margin-bottom: 2rem;
+  font-family: "Major Mono Display", monospace;
+  font-weight: 1;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+#line1 {
+  border-color: white;
+}
+
+.line {
+  box-sizing: border-box;
+  border: black solid;
+  width: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-family: "Major Mono Display", monospace;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 0.9rem;
+  color: #000000;
+  line-height: 1.125;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 1.5vw;
+  color: #ffffff;
+  line-height: 1.125;
+  margin-bottom: 2vw;
+  margin: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+#first_section {
+  grid-column: 1/4;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("billeder/green.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+}
+
+#first_section .section_wrapper {
+  /* grid-column: 3/4;
+  grid-row: 2/3; */
+}
+
+#second_section h2 {
+  margin: 3rem;
+}
+
+#second_section .section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem;
+  margin-bottom: 5rem;
+}
+
+footer {
+  background-color: white;
+  font-family: "Major Mono Display", monospace;
+  padding-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.socials s {
+  text-decoration: none;
+  color: white;
+}
+
+.socials a i {
+  font-size: 2rem;
+  transition: color 0.4s ease;
+  color: black;
+}
+
+.socials a i:hover {
+  color: rgb(108, 167, 32);
+}
+
+.footer-bottom {
+  background-color: rgb(228, 228, 228);
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
